@@ -1,12 +1,11 @@
 body {
-  background-color: #7FFFD4; /* Warna Aquamarine */
-     font-family: Arial, OpenSans; /* Jenis huruf yang bersih dan mudah dibaca */
-     text-allign: center;
-     color: #222 /* Warna teks utama (Antique White) */
-    background: linear-gradient(135deg, #a8edea, #fed6e3); 
-    padding: 50px;
-    transition: background-color 0.5s, color 0.5s, background 0.5s;  
-     }
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  background: linear-gradient(135deg, #a8edea, #fed6e3); /* gradasi lembut */
+  color: #222;
+  padding: 50px;
+  transition: background-color 0.5s, color 0.5s, background 0.5s;
+}
 body.gelap {
   background-color: #121212;
   color: #f5f5f5;
