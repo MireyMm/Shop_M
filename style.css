@@ -4,56 +4,34 @@ body {
   background: linear-gradient(135deg, #a8edea, #fed6e3); /* gradasi lembut */
   color: #222;
   padding: 50px;
-  transition: background-color 0.5s, color 0.5s, background 0.5s;
-}
-body.gelap {
-  background: linear-gradient(135deg, #0f0f0f, #202020);
-  color: #f5f5f5;
-}
-body.gelap .kartu-profil {
-  background: #1e1e1e;
-  color: #f5f5f5;
-  box-shadow: 0 8px 20px rgba(255,255,255,0.1);
-}
-body.gelap h1 {
-  color: #ffffff;
-}
-body.gelap p {
-  color: #e0e0e0;
-}
-body.gelap a {
-  color: #ffb3b3;
-}
-body.gelap .tombol {
-  background-color: #ff4d4d;
-  color: white;
-}
-body, .kartu-profil {
-  transition: background 0.5s ease, color 0.5s ease;
+  transition: background 0.5s, color 0.5s;
 }
 .kartu-profil {
-  background: #ffffffcc;
+  background: #ffffffcc; /* putih transparan */
   backdrop-filter: blur(10px);
   border-radius: 20px;
   padding: 40px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
   display: inline-block;
-  transition: transform 0.5s ease;
+  transition: all 0.5s ease;
   max-width: 320px;
 }
+
 .kartu-profil:hover {
   transform: translateY(-8px);
 }
+
 .kartu-profil img {
- border-radius: 50%;
+  border-radius: 50%;
   border: 5px solid #ff6b6b;
   margin-bottom: 20px;
 }
- h1 {
+h1 {
   color: #1a237e;
   font-size: 28px;
   margin-bottom: 10px;
 }
+
 p {
   color: #444;
   font-size: 15px;
@@ -61,7 +39,7 @@ p {
   line-height: 1.5;
 }
 .tombol {
-   background-color: #ff6b6b;
+  background-color: #ff6b6b;
   color: white;
   padding: 10px 22px;
   border: none;
@@ -70,33 +48,72 @@ p {
   font-weight: 600;
   margin: 10px;
   transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(255, 107, 107, 0.4);
 }
+
 .tombol:hover {
   background-color: #ff3b3b;
   transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(255, 107, 107, 0.5);
 }
-.tombol {
-  background-color: #ff6b6b;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-.tombol:hover {
-  background-color: #ff3b3b;
-  transform: scale(1.05);
-}
+
 a {
   color: #3f51b5;
   text-decoration: none;
   font-weight: bold;
 }
+
 a:hover {
   text-decoration: underline;
 }
+
 body.gelap {
-  background-color: #121212;
+  background: linear-gradient(135deg, #0f0f0f, #202020);
   color: #f5f5f5;
+}
+
+body.gelap .kartu-profil {
+  background: #1e1e1e;
+  color: #f5f5f5;
+  box-shadow: 0 8px 20px rgba(255,255,255,0.1);
+}
+
+body.gelap h1 {
+  color: #ffffff;
+}
+
+body.gelap p {
+  color: #e0e0e0;
+}
+
+body.gelap a {
+  color: #ffb3b3;
+}
+
+body.gelap .tombol {
+  background-color: #ff4d4d;
+  color: white;
+  box-shadow: 0 4px 10px rgba(255, 77, 77, 0.3);
+}
+
+body, .kartu-profil {
+  transition: background 0.5s ease, color 0.5s ease;
+}
+.kartu-profil img {
+  border-radius: 50%;
+  border: 5px solid #ff6b6b;
+  box-shadow: 0 0 20px rgba(255,107,107,0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.kartu-profil img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(255,107,107,0.6);
+}
+body.gelap .kartu-profil {
+  animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
