@@ -8,19 +8,22 @@ body {
 body.gelap {
   background-color: #121212;
   color: #f5f5f5;
+body.gelap .kartu-profil {
+  background: #1e1e1e; 
+  color: #f5f5f5; 
 }
-body.gelap h1 {
+body.gelap .kartu-profil h1 {
   color: #ffffff;
 }
-body.gelap p {
+body.gelap .kartu-profil p {
   color: #e0e0e0;
 }
-body.gelap a {
+body.gelap .kartu-profil a {
   color: #ffb3b3;
 }
-body.gelap .tombol {
-  background-color: #ff3b3b;
-  color: #fff;
+body.gelap .kartu-profil .tombol {
+  background-color: #ff4d4d;
+  color: white;
 }
 .kartu-profil {
   background: white;
@@ -28,7 +31,8 @@ body.gelap .tombol {
   padding: 30px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
   display: inline-block;
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
+  color: #222;
 }
 .kartu-profil:hover {
   transform: translateY(-5px);
