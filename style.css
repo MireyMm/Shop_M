@@ -2,6 +2,8 @@ body {
   background-color: #7FFFD4; /* Warna Aquamarine */
      font-family: Arial, OpenSans; /* Jenis huruf yang bersih dan mudah dibaca */
      color: #191970; /* Warna teks utama (Antique White) */
+     background-color: #f2f2f2;
+    transition: background-color 0.5s, color 0.5s;  
      }
 body.gelap {
   background-color: #121212;
