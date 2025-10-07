@@ -1,6 +1,6 @@
 body {
   background-color: #7FFFD4; /* Warna Aquamarine */
-     font-family: OpenSans; /* Jenis huruf yang bersih dan mudah dibaca */
+     font-family: Arial, OpenSans; /* Jenis huruf yang bersih dan mudah dibaca */
      color: #191970; /* Warna teks utama (Antique White) */
      }
 .kartu-profil {
@@ -9,10 +9,14 @@ body {
   padding: 20px;
   background-color: White;
   border-radius: 15px; /* membuat sudut menjadi melengkung */
-box-shadow: 0 4px  8px rgba(0,0,0,0.1); /* Efek bayangan */
+  box-shadow: 0 4px  8px rgba(0,0,0,0.1); /* Efek bayangan */
   text-allign: center; /* menengahkan semua teks di dalam kartu */
 }
 .karu-profil img {
   width: 150px;
   border-radius: 50%; /* trik untuk membuat gambar persegi menjadi lingkaran */ 
+}
+body.gelap {
+  background-color: #121212;
+  color: #f5f5f5;
 }
